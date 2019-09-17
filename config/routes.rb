@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   get "/students/:id", to: 'students#show'
   get "/courses/:id", to: 'courses#show'
   post "/students/:id", to: 'courses#create'
+  delete "/courses/students/:id", to: 'courses#destroy'
 end

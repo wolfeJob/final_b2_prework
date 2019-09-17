@@ -18,7 +18,6 @@ describe 'When I visit course show page I can enroll a student' do
 
     expect(current_path).to eq("/students/#{@scott.id}")
     expect(page).to have_content(@art.name)
-    save_and_open_page
-    
+    # save_and_open_page
 end
 end

@@ -5,6 +5,7 @@
 <section id='course-<%=@course.id%>'>
    <% @course.course_students_by_grade.each do |course_student| %>
    <%= course_student.student.name %>
+   <%= button_to "Unenroll", "/courses/students/:id", method: :delete %>
    <p>Grade: <%= course_student.grade %></p>
    <% end  %>
  </section>
