@@ -22,7 +22,7 @@ def destroy
   @student = Student.all.find do |student|
     desired_name = student.name
   end
-pry
+  @student.courses[0].destroy
 redirect_to "/students/#{@student.id}"
 end
 end
