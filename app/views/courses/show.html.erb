@@ -8,4 +8,9 @@
    <p>Grade: <%= course_student.grade %></p>
    <% end  %>
  </section>
+ <%= form_tag "/students/:id", method: :patch do %>
+ <%= label_tag :name %>
+ <%= text_field_tag :name, "Name" %>
+ <%= submit_tag "Submit" %>
+ <% end %>
 <hr>
